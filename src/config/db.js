@@ -1,4 +1,4 @@
-const require = require('mongoose');
+const mongoose = require('mongoose');
 
 class dbConfig {
     static async connect() {
@@ -33,4 +33,4 @@ class dbConfig {
     }
 }
 
-model.exports = dbConfig;
+model.exports = dbConfig
