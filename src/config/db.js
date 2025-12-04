@@ -31,3 +31,5 @@ class dbConfig{
         }
     }
 }
+
+model.exports = dbConfig;
