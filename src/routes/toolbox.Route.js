@@ -7,3 +7,5 @@ router.get('/',(req,res)=>{
         success: false,
     });
 })
+
+module.exports = router;
