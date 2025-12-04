@@ -33,4 +33,4 @@ class dbConfig {
     }
 }
 
-model.exports = dbConfig
+module.exports = dbConfig
