@@ -1,8 +1,8 @@
-const app = require("./App.js");
+const app  = require("./App.js");
 const config = require("./config");
 const dbConfig = require("./config/db.js");
 
-const startServer = async ()=>{
+const startServer = async () => {
     try {
         await dbConfig.connect()
 
@@ -16,4 +16,4 @@ const startServer = async ()=>{
     }
 }
 
-startServer
+startServer()
