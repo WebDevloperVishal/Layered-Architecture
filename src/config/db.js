@@ -16,6 +16,7 @@ class dbConfig{
             };
 
             await mongoose.connect(MONGODB_URL, options)
+            console.log()
         } catch (error) {
             console.log("Failed to connect to MongoDB:", error.message)
             process.exit(1);
