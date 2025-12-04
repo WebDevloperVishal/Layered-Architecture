@@ -1,11 +1,11 @@
 const require = require('mongoose');
 
-class dbConfig{
-    static async connect(){
+class dbConfig {
+    static async connect() {
         try {
             const MONGODB_URL = process.env.MONGODB_URL
 
-            if(!MONGODB_URL){
+            if (!MONGODB_URL) {
                 throw new Error('MongoDB Connection URI is not define')
             }
 
@@ -23,7 +23,7 @@ class dbConfig{
         }
     }
 
-     static async disconnect() {
+    static async disconnect() {
         try {
             await mongoose.disconnect();
             console.log('MongoDB disconnected successfully');
