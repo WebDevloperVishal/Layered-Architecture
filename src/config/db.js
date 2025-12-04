@@ -21,4 +21,13 @@ class dbConfig{
             process.exit(1);
         }
     }
+
+     static async disconnect() {
+        try {
+            await mongoose.disconnect();
+            console.log('MongoDB disconnected successfully');
+        } catch (error) {
+            console.error('Error disconnecting from MongoDB:', error);
+        }
+    }
 }
